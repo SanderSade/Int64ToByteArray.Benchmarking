@@ -8,10 +8,10 @@ As .NET has quite a few ways to get number as a byte array, I decided to do some
 
 ### Implementations
 
-* BinaryPrimitives.WriteInt64LittleEndian(), using Span
-* BitConverter.GetBytes() - old, trusty, the "default" way
-* Byte array in unsafe context
-* Explicitly laid out struct
+* [BinaryPrimitives.WriteInt64LittleEndian()](https://github.com/SanderSade/Int64ToByteArray.Benchmarking/blob/1e118141a95d063f56d2f5bd3696f330ba2b522f/Int64ToByteArray.Benchmarking/UsingBinaryPrimitives.cs#L8), using Span
+* [BitConverter.GetBytes()](https://github.com/SanderSade/Int64ToByteArray.Benchmarking/blob/1e118141a95d063f56d2f5bd3696f330ba2b522f/Int64ToByteArray.Benchmarking/UsingBitConverter.cs#L7) - old, trusty, the "default" way
+* [Byte array in unsafe context](https://github.com/SanderSade/Int64ToByteArray.Benchmarking/blob/1e118141a95d063f56d2f5bd3696f330ba2b522f/Int64ToByteArray.Benchmarking/UsingUnsafeByteArray.cs#L7)
+* [Explicitly laid out struct](https://github.com/SanderSade/Int64ToByteArray.Benchmarking/blob/1e118141a95d063f56d2f5bd3696f330ba2b522f/Int64ToByteArray.Benchmarking/UsingStruct.cs#L7)
 
 
 ### Results
